@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.container{
+    max-width: 1192px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+input{
+    outline: none;
+}
+.text__lg{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: $bg-py;
+}
+.text__md{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: $bg-text;
+}
+
+.text__sm__logo{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: $bg-logo;
+}
+.text__sm{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: $bg-text;
+}

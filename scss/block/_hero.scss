@@ -1,0 +1,65 @@
+.hero{
+    width: 100%;
+    background: $bg-py;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        padding-top: 100px;
+        gap: 40px;
+        button{
+            width: 263px;
+            height: 51px;
+            background: #fff;
+            border-radius: 24px;
+            border: none;
+        }
+        button:hover{
+            background: $bg-gold;
+        }
+    }
+    &__context{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 20px;
+    }
+    &__logo{
+        font-size: 92px;
+        font-weight: 700;
+        font-family: sans-serif;
+        color: $bg-logo;
+    }
+}
+
+@media (max-width:800px){
+    .hero__wrapper{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__context{
+        width: 100%;
+    }
+    .hero__logo{
+        font-size: 40px;
+    }
+    .hero__image{
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+    .hero__logo{
+        font-size: 35px;
+    }
+    .text__lg{
+        font-size: 20px;
+    }
+    .text__md{
+        font-size: 15px;
+    }
+    .hero__wrapper button{
+        width: 150px;
+        height: 30px;
+    }
+    
+}

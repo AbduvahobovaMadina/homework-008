@@ -1,0 +1,89 @@
+.device{
+    width: 100%;
+    background: $bg-sy;
+    &__wrapper{
+        padding-top: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+    }
+    &__img img{
+        width: 80%;
+    }
+    &__context{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px ;
+        width: 40%;
+    }
+    &__text{
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .seconds{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .third{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width:800px){
+    .device__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 10px;
+    }
+    .device__img{
+        width: 100%;
+    }
+    .device__context{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .device__text img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    .third{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 10px;
+    }
+}
+@media (max-width:800px) {
+    .seconds{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 10px;  
+    }
+    .device__context{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .device__text img{
+        width: 18px;
+        height: 18px;
+    }
+}
+
