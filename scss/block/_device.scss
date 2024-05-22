@@ -38,52 +38,96 @@
         justify-content: space-between;
     }
 }
+.source{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    &__text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+    }
+    &__text img{
+        width: 24px;
+        height: 24px;
+    }
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    &__img{
+        width: 150%;
+    }
+    &__context{
+        width: 40%;
+    }
+    &__text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+    }
+    &__text img{
+        width: 24px;
+        height: 24px;
+    }
+}
+
 @media (max-width:800px){
     .device__wrapper{
         display: flex;
         flex-direction: column;
         padding-top: 10px;
         gap: 10px;
+        .device__img{
+            width: 100%;
+        }
+        .device__context{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
     }
-    .device__img{
-        width: 100%;
-    }
-    .device__context{
-        width: 100%;
+}
+
+@media (max-width:800px) {
+    .source{
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .device__text img{
-        width: 18px;
-        height: 18px;
-    }
-    
-    .third{
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-        gap: 10px;
-    }
+        flex-direction: column-reverse;
+        &__wrapper{
+            width: 100%;
+        }
+        &__text img{
+            width: 15px;
+            height: 15px;
+        }
+    } 
 }
 @media (max-width:800px) {
-    .seconds{
+    .features{
         display: flex;
         flex-direction: column;
-        padding-top: 10px;
-        gap: 10px;  
-    }
-    .device__context{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .device__text img{
-        width: 18px;
-        height: 18px;
+        &__img{
+            margin-top: 30px;
+            width: 100%;
+        }
+        &__text img{
+            width: 15px;
+            height: 15px;
+        }
     }
 }
+
+
+
+
 

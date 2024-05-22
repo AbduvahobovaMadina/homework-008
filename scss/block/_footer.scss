@@ -1,0 +1,18 @@
+.footer{
+    width: 100%;
+    background: $bg-py;
+    padding-top: 20px;
+    &__wrapper{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width:800px) {
+    .footer__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
